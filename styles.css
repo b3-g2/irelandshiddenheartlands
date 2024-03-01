@@ -1,0 +1,240 @@
+/* Reset some default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Add spacing between sections */
+.hero-section, .welcome-section, .explore-section {
+    margin-bottom: 160px;
+}
+
+/* Define styles for individual sections */
+/* Hero Section styles */
+/* Add your custom CSS styles here */
+/* Add your custom CSS styles here */
+
+.hero-section {
+    background-image: url('assets/hero.png');
+    /* Set your desired image path here */
+    background-size: cover;
+    background-position: center 20%;
+    height: 100vh;
+    /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 0;
+    /* Align to the bottom */
+    left: 0;
+    /* Align to the left */
+    padding: 30px;
+    /* Add padding for spacing */
+    color: #fff;
+    /* Text color */
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 0;
+    position: relative;
+    letter-spacing: -0.02em;
+    line-height: 120%;
+    font-weight: 400;
+    font-family: inherit;
+    max-width: 100%;
+}
+
+.navbar {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+#navbar .container {
+    padding-left: 10px;
+    padding-right: 0;
+    margin-right: 120px;
+}
+
+/* Language selector chevron */
+.language-icon {
+    object-fit: contain;
+    width: 40px;
+    /* Adjust the width to make the chevron bigger */
+    height: auto;
+    /* Adjust height as needed */
+    transition: transform 0.3s ease;
+    /* Add transition for smooth rotation */
+}
+
+.rotated {
+    transform: rotate(-180deg);
+    /* Rotate the icon by 180 degrees */
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    border: none;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 0;
+}
+
+.dropdown-item {
+    padding: 8px 20px;
+    color: #333;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    /* Add border radius */
+}
+
+
+.navbar.scrolled {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
+    color: #000;
+    /* Text color */
+    font-size: 25px;
+    /* Adjust the font size as needed */
+    font-weight: normal;
+    margin-left: 10px;
+    /* Increase the margin between links */
+}
+
+.navbar-nav .nav-link.btn-primary {
+    background-color: #426b1f;
+    /* Button color */
+    border: 2px solid transparent;
+    color: #fff;
+    padding: 0px 30px;
+}
+
+.navbar-nav .nav-link.btn-primary:hover {
+    background-color: #426b1f;
+    /* Button hover color */
+}
+
+/* Welcome */
+.welcome-section {
+    /* Your styles for the Welcome section */
+}
+
+.smaller-svg {
+    width: 500px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.welcome-section h2 {
+    font-size: 28px;
+    /* Adjust the font size of h2 as needed */
+    margin-bottom: 30px;
+    /* Adjust the margin-bottom as needed */
+    font-weight: bold;
+}
+
+.welcome-section p {
+    font-size: 18px;
+    /* Adjust the font size of p as needed */
+}
+
+/* Explore */
+.explore-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.explore-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: #2b2b2b;
+}
+
+.explore-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+
+.explore-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    padding: 0 20px;
+    z-index: 2;
+    width: 100%;
+    overflow: hidden;
+    cursor: grab;
+}
+
+.text-content {
+    color: #fff;
+    min-width: 500px;
+    margin-right: 20px;
+    margin-left: 60px;
+}
+
+.tile-container {
+    display: flex;
+    white-space: nowrap;
+}
+
+.tile {
+    width: 490px;
+    height: 737px;
+    background-color: lightgray;
+    margin-right: 50px;
+}
+
+/* Add this to your existing CSS */
+.grab {
+    cursor: grab;
+}
+
+.grabbing {
+    cursor: grabbing;
+}
+
+
+
+
+/* Footer */
+.footer-section {
+    position: relative;
+    height: 40vh;
+    background-color: #2b2b2b;
+}
