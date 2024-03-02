@@ -1,15 +1,15 @@
-// JavaScript to toggle navbar background color on scroll
-var nav = document.querySelector('nav');
-var heroSectionHeight = document.querySelector('.hero-section').offsetHeight;
-var scrollThreshold = 50; // Adjust the scroll threshold as needed
+// // JavaScript to toggle navbar background color on scroll
+// var nav = document.querySelector('nav');
+// var heroSectionHeight = document.querySelector('.hero-section').offsetHeight;
+// var scrollThreshold = 50; // Adjust the scroll threshold as needed
 
-window.addEventListener('scroll', function () {
-    if (window.scrollY > scrollThreshold) {
-        nav.classList.add('scrolled');
-    } else {
-        nav.classList.remove('scrolled');
-    }
-});
+// window.addEventListener('scroll', function () {
+//     if (window.scrollY > scrollThreshold) {
+//         nav.classList.add('scrolled');
+//     } else {
+//         nav.classList.remove('scrolled');
+//     }
+// });
 
 
 // Function to rotate the chevron icon when the dropdown menu is clicked
