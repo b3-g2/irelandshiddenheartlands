@@ -221,10 +221,11 @@ body, h1, h2, h3, p, ul, li {
 }
 
 .tile {
-    width: 490px;
-    height: 737px;
+    width: 30%; /* Adjust percentage as needed */
+    max-width: 300px; /* Limit maximum width */
+    aspect-ratio: 490 / 737; /* Maintain aspect ratio */
     background-color: lightgray;
-    margin-right: 50px;
+    margin-right: 5%; /* Adjust margin as needed */
 }
 
 /* Add this to your existing CSS */
