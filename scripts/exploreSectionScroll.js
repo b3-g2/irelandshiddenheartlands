@@ -3,7 +3,6 @@ let isPointerDown = false;
 let startX;
 let startY;
 let scrollLeft;
-let scrollTop;
 
 // Mouse events
 exploreContent.addEventListener('mousedown', handlePointerDown);
@@ -21,7 +20,6 @@ function handlePointerDown(event) {
     startX = getPointerX(event);
     startY = getPointerY(event);
     scrollLeft = exploreContent.scrollLeft;
-    scrollTop = exploreContent.scrollTop;
     exploreContent.classList.add('grabbing');
 }
 
