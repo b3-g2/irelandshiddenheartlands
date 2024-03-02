@@ -161,7 +161,6 @@ body, h1, h2, h3, p, ul, li {
 .explore-section {
     position: relative;
     height: 100vh;
-    overflow: hidden;
 }
 
 .explore-background {
@@ -192,12 +191,13 @@ body, h1, h2, h3, p, ul, li {
     transform: translateY(-50%);
     display: flex;
     align-items: center;
-    overflow-x: auto;
+    overflow: auto;
+    scrollbar-width: none;
+    /* Firefox */
     /* Enable horizontal scrolling */
     padding: 0 20px;
     z-index: 2;
     width: 100%;
-    overflow: hidden;
     cursor: grab;
 }
 
