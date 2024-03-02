@@ -183,7 +183,6 @@ body, h1, h2, h3, p, ul, li {
     z-index: 1;
 }
 
-
 .explore-content {
     position: absolute;
     top: 50%;
@@ -194,7 +193,6 @@ body, h1, h2, h3, p, ul, li {
     overflow: auto;
     scrollbar-width: none;
     /* Firefox */
-    /* Enable horizontal scrolling */
     padding: 0 20px;
     z-index: 2;
     width: 100%;
@@ -208,24 +206,35 @@ body, h1, h2, h3, p, ul, li {
     margin-left: 60px;
 }
 
-@media screen and (max-width: 768px) {
-    .text-content {
-        margin-left: 20px;
-    }
-}
-
-
 .tile-container {
     display: flex;
     white-space: nowrap;
 }
 
 .tile {
-    width: 30%; /* Adjust percentage as needed */
-    max-width: 300px; /* Limit maximum width */
-    aspect-ratio: 490 / 737; /* Maintain aspect ratio */
+    width: 490px;
+    height: 737px;
     background-color: lightgray;
-    margin-right: 5%; /* Adjust margin as needed */
+    margin-right: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .text-content {
+        margin-left: 20px;
+    }
+
+    .tile {
+        width: 300px;
+        /* Adjust the width as per your requirements */
+        height: 450px;
+        /* Adjust the height as per your requirements */
+        margin-right: 20px;
+        /* Adjust the margin as per your requirements */
+    }
+}
+
+.tile:last-child {
+    margin-right: 0;
 }
 
 /* Add this to your existing CSS */
@@ -236,7 +245,6 @@ body, h1, h2, h3, p, ul, li {
 .grabbing {
     cursor: grabbing;
 }
-
 
 /* Footer */
 .footer-section {
