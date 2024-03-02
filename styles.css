@@ -183,6 +183,17 @@ body, h1, h2, h3, p, ul, li {
     z-index: 1;
 }
 
+/* Center text-content on smaller screens */
+@media screen and (max-width: 768px) {
+    .text-content {
+        text-align: center;
+        margin: 0 auto;
+        min-width: auto;
+        /* Adjust as needed */
+        margin-left: 0;
+    }
+}
+
 
 .explore-content {
     position: absolute;
@@ -228,8 +239,6 @@ body, h1, h2, h3, p, ul, li {
 .grabbing {
     cursor: grabbing;
 }
-
-
 
 
 /* Footer */
