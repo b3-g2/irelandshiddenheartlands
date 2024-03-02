@@ -32,18 +32,22 @@ function handlePointerUp() {
 
 function handlePointerMove(event) {
     if (!isPointerDown) return;
-    event.preventDefault();
+
     const x = getPointerX(event);
     const y = getPointerY(event);
     const walkX = (x - startX) * 2;
     const walkY = (y - startY) * 2;
 
-    if (Math.abs(walkX) > Math.abs(walkY)) {
+    // Determine whether the user is predominantly scrolling horizontally or vertically
+    const isHorizontalScroll = Math.abs(walkX) > Math.abs(walkY);
+
+    if (isHorizontalScroll) {
         // Horizontal scrolling
+        event.preventDefault(); // Prevent default horizontal scrolling behavior
         exploreContent.scrollLeft = scrollLeft - walkX;
     } else {
         // Vertical scrolling
-        exploreContent.scrollTop = scrollTop - walkY;
+        // Allow default vertical scrolling behavior
     }
 }
 
