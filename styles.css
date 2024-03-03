@@ -302,6 +302,7 @@ body, h1, h2, h3, p, ul, li {
 .explore-section {
   position: relative;
   height: 100vh;
+  overflow-x: hidden; /* Add this line */
 }
 
 .explore-background {
