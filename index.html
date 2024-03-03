@@ -10,14 +10,11 @@
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
-
   <!-- Start Hero Section -->
   <section class="hero-section">
-
     <div class="hero-content">
       <h1>Discover Ireland's</h1>
       <h1>Hidden Heartlands</h1>
@@ -25,56 +22,48 @@
 
     <!-- Navbar -->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
-      <div class="container">
-
-
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Escape to Ireland</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-primary" href="#">Book</a>
+            </li>
             <li class="nav-item dropdown">
-              <a class="nav-item nav-link language-selector" onclick="rotateChevron(event)" href="#" id="navbarDropdown"
+              <a class="nav-link language-selector" href="#" id="navbarDropdown" onclick="rotateChevron(event)"
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="assets/chevron.svg" alt="Language Icon" class="language-icon" id="chevronIcon"> EN
+                EN <img src="assets/chevron.svg" alt="Language Icon" class="language-icon" id="chevronIcon">
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu mobile-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">English</a></li>
                 <li><a class="dropdown-item" href="#">Greek</a></li>
                 <li><a class="dropdown-item" href="#">Danish</a></li>
               </ul>
             </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Explore</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link btn btn-primary" href="#">Book</a>
-            </li>
           </ul>
         </div>
-
       </div>
     </nav>
   </section>
   <!-- End Hero Section -->
 
-  <!-- Welcome section -->
+  <!-- Welcome Section -->
   <div class="welcome-section">
     <div class="container">
       <div class="row">
@@ -84,7 +73,8 @@
             <p>Explore the serene landscapes, charming villages, and rich culture of Ireland's Hidden Heartlands. From
               picturesque lakeshores to historic landmarks, our region offers unforgettable experiences for nature
               lovers, history enthusiasts, and foodies alike. Begin your journey of discovery today and uncover the
-              hidden treasures of Ireland's Heartlands with us.</p>
+              hidden treasures of Ireland's Heartlands with us.
+            </p>
           </div>
         </div>
         <div class="col-md-6">
@@ -93,127 +83,159 @@
       </div>
     </div>
   </div>
-
-<!-- Explore section -->
-<div class="explore-section" id="explore-section">
-  <div class="explore-background">
-    <img src="assets/exploreBackground1.png" alt="Your Image Description">
-  </div>
-
-  <div class="explore-content" id="exploreContent">
-    <div class="text-content" id="textContent">
-      <h2>Journey Through<br>Ireland's Hidden Heartlands</h2>
-      <p>Discover History, Culture, Nature, and Cuisine</p>
+  <!-- End of Welcome Section -->
+  <!-- Explore section -->
+  <div class="explore-section" id="explore-section">
+    <div class="explore-background">
+      <img src="assets/exploreBackground1.png" alt="Your Image Description">
     </div>
-
-    <div class="tile-container" id="tileContainer">
-      <div class="tile">
-        <img src="assets/history.png" alt="Tile Image 1">
-        
-        <div class="tile-text-content">
-          <div class="tile-location">Clonmacnoise, Co. Offaly</div>
-          <div class="tile-header tile-text">History</div>
-          <div class="tile-caption tile-text">Explore the history</div>
-        </div>
-        
-        <div class="tile-button">
-      <button>Explore</button>
-    </div>
+    <div class="explore-content" id="exploreContent">
+      <div class="text-content" id="textContent">
+        <h2>Journey Through<br>Ireland's Hidden Heartlands</h2>
+        <p>Discover History, Culture, Nature, and Cuisine</p>
       </div>
-      <div class="tile">
-        <img src="assets/culture.png" alt="Tile Image 2">
-        
-        <div class="tile-text-content">
-          <div class="tile-location">Clonmacnoise, Co. Offaly</div>
-          <div class="tile-header tile-text">History</div>
-          <div class="tile-caption tile-text">Explore the history</div>
-        </div>
-        
-        <div class="tile-button">
-      <button>Explore</button>
-    </div>
-      </div>
-        
-      <div class="tile">
-        <img src="assets/nature.jpg" alt="Tile Image 3">
-        <div class="tile-text-content">
-          <div class="tile-location">Clonmacnoise, Co. Offaly</div>
-          <div class="tile-header tile-text">History</div>
-          <div class="tile-caption tile-text">Explore the history</div>
-        </div>
-        
-        <div class="tile-button">
-      <button>Explore</button>
-    </div>
-      </div>
-        
-      <div class="tile">
-        <img src="assets/cuisine.jpg" alt="Tile Image 4">
-        <div class="tile-text-content">
-          <div class="tile-location">Clonmacnoise, Co. Offaly</div>
-          <div class="tile-header tile-text">History</div>
-          <div class="tile-caption tile-text">Explore the history</div>
-        </div>
-        
-        <div class="tile-button">
-      <button>Explore</button>
-    </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-<footer class="footer-section">
-    <!-- Content for Footer -->
-    <div class="footer-content">
-        <div class="footer-left">
-            <h2 class="footer-heading">Site Links</h2>
-            <ul class="site-links">
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Explore</li>
-                <li>Contact Us</li>
-            </ul>
-            <h2 class="footer-heading">Legal</h2>
-            <ul class="legal-links">
-                <li>Privacy Policy</li>
-                <li>Cookie Policy</li>
-                <li>Terms of Use</li>
-            </ul>
-            <div class="copyright">©️ 2024 Escape to Ireland</div>
-        </div>
-        <div class="footer-right">
-            <div class="newsletter">
-                <h3>Newsletter</h3>
-                <button>Sign Up</button>
+      <div class="tile-container" id="tileContainer">
+        <div class="tile">
+          <img src="assets/history.png" alt="Tile Image 1">
+          <div class="tile-text-content">
+            <div class="tile-location">Clonmacnoise, Co. Offaly</div>
+            <div class="tile-header">History</div>
+            <div class="tile-caption">Explore the rich tapestry of history <br>
+              woven into the fabric of the Hidden<br>
+              Heartlands. From ancient ruins to<br>
+              medieval castles, our region is<br>
+              steeped in stories of kings and<br>
+              conquerors.
             </div>
-        <div class="socials">
-    <h2>Socials</h2>
-    <ul class="social-links">
-        <li><img src="assets/twitter.svg" alt="Twitter"></li>
-        <li><img src="assets/youtube.svg" alt="YouTube"></li>
-        <li><img src="assets/tiktok.svg" alt="Tiktok"></li>
-        <li><img src="assets/facebook.svg" alt="Facebook"></li>
-        <li><img src="assets/instagram.svg" alt="Instagram"></li>
-    </ul>
-</div>
-
+          </div>
+          <div class="tile-button">
+            <button>Explore</button>
+          </div>
         </div>
+        <div class="tile">
+          <img src="assets/culture.png" alt="Tile Image 2">
+          <div class="tile-text-content">
+            <div class="tile-location">Vaughan's House, Co. Leitrim</div>
+            <div class="tile-header">Culture</div>
+            <div class="tile-caption">Immerse yourself in the vibrant culture <br>
+              and traditions of the Hidden <br>
+              Heartlands. Experience the warmth of <br>
+              traditional Irish music, dance, and <br>
+              folklore as you journey through our <br>
+              charming villages and towns.
+            </div>
+          </div>
+          <div class="tile-button">
+            <button>Explore</button>
+          </div>
+        </div>
+        <div class="tile">
+          <img src="assets/nature.jpg" alt="Tile Image 3">
+          <div class="tile-text-content">
+            <div class="tile-location">Lough Derg, Co. Clare</div>
+            <div class="tile-header">Nature</div>
+            <div class="tile-caption">Discover the breathtaking beauty of <br>
+              the natural landscapes that define the Hidden Heartlands. From tranquil <br>
+              lakeshores to lush forests and rolling <br>
+              green hills, our region is a haven for <br>
+              outdoor enthusiasts and nature <br>
+              lovers.
+            </div>
+          </div>
+          <div class="tile-button">
+            <button>Explore</button>
+          </div>
+        </div>
+        <div class="tile">
+          <img src="assets/cuisine.jpg" alt="Tile Image 4">
+          <div class="tile-text-content">
+            <div class="tile-location">Nenagh, Co. Tipperary</div>
+            <div class="tile-header">Cuisine</div>
+            <div class="tile-caption">Indulge your taste buds in the culinary <br>
+              delights of the Hidden Heartlands. <br>
+              From farm-to-table dining experiences <br>
+              to cozy pubs serving hearty Irish fare, <br>
+              our region offers a feast for every <br>
+              palate.
+            </div>
+          </div>
+          <div class="tile-button">
+            <button>Explore</button>
+          </div>
+        </div>
+      </div>
     </div>
-</footer>
+  </div>
+  <!-- End of Explore Section -->
+
+  <!-- Footer Section -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row">
+        <!-- Site Links -->
+        <div class="col-md-3">
+          <h5>Site Links</h5>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div class="col-md-3">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="https://www.youtube.com/watch?v=Ye8mB6VsUHw">Cookie Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="newsletter col-md-3">
+          <h5>Newsletter</h5>
+          <p>Subscribe to our newsletter for updates</p>
+          <button class="button btn btn-primary">Sign Up</button>
+        </div>
+
+        <!-- Socials -->
+        <div class="col-md-3">
+          <h5>Socials</h5>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#"><img src="assets/twitter.svg" alt="Twitter"></a></li>
+            <li class="list-inline-item"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img
+                  src="assets/youtube.svg" alt="YouTube"></a></li>
+            <li class="list-inline-item"><a href="#"><img src="assets/tiktok.svg" alt="TikTok"></a></li>
+            <li class="list-inline-item"><a href="#"><img src="assets/facebook.svg" alt="Facebook"></a></li>
+            <li class="list-inline-item"><a href="#"><img src="assets/instagram.svg" alt="Instagram"></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Copyright notice -->
+      <div class="row mt-4">
+        <div class="col-md-12">
+          <p>&copy;<span class="current-year">2024</span> Escape to Ireland</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End of Footer Section -->
+
+
+
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-
   <script src="scripts/navbar.js"></script>
   <script src="scripts/exploreSectionCalculation.js"></script>
   <script src="scripts/exploreSectionScroll.js"></script>
+  <script src="scripts/updateYear.js"></script>
 </body>
 
 </html>
