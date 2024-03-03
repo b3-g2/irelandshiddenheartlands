@@ -331,7 +331,7 @@ body, h1, h2, h3, p, ul, li {
   transform: translateY(-50%);
   display: flex;
   align-items: center;
-  overflow: auto;
+  overflow: hidden;
   scrollbar-width: none;
   padding: 0 20px;
   z-index: 2;
