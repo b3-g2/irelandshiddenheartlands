@@ -471,6 +471,10 @@ section, .hero-section, .welcome-section, .explore-section {
   text-decoration: underline;
 }
 
+.footer-section .block {
+  margin-bottom: 20px;
+}
+
 .newsletter .button {
   margin-top: 10px;
   background-color: #426b1f;
