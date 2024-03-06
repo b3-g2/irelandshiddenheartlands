@@ -23,39 +23,67 @@
     <!-- Navbar -->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container-fluid">
+
         <a class="navbar-brand" href="#">Escape to Ireland</a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
+
             <li class="nav-item">
               <a class="nav-link" href="#">Home</a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#">About Us</a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#">Explore</a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#">Contact Us</a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link btn btn-primary" href="#">Book</a>
             </li>
+
+            <!-- Language selector dropdown -->
             <li class="nav-item dropdown">
-              <a class="nav-link language-selector" href="#" id="navbarDropdown" onclick="rotateChevron(event)"
-                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                EN <img src="assets/chevron.svg" alt="Language Icon" class="language-icon" id="chevronIcon">
+              <a class="nav-link language-selector dropdown-selector" href="#" id="navbarDropdownLanguage"
+                onclick="rotateChevron(event, 'chevronIconLanguage')" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Language <img src="assets/chevron.svg" alt="Language Icon" class="language-icon"
+                  id="chevronIconLanguage">
               </a>
-              <ul class="dropdown-menu mobile-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu mobile-menu language-menu" aria-labelledby="navbarDropdownLanguage">
                 <li><a class="dropdown-item" href="#">English</a></li>
                 <li><a class="dropdown-item" href="#">Greek</a></li>
                 <li><a class="dropdown-item" href="#">Danish</a></li>
               </ul>
             </li>
+
+            <!-- Region/locale selector dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link region-selector dropdown-selector" href="#" id="regionDropdown"
+                onclick="rotateChevron(event, 'chevronIconRegion')" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Region <img src="assets/chevron.svg" alt="Region Icon" class="region-icon" id="chevronIconRegion">
+              </a>
+              <ul class="dropdown-menu mobile-menu region-menu" aria-labelledby="regionDropdown">
+                <li><a class="dropdown-item" href="#">Ireland</a></li>
+                <li><a class="dropdown-item" href="#">Greece</a></li>
+                <li><a class="dropdown-item" href="#">Denmark</a></li>
+              </ul>
+            </li>
+
+
           </ul>
         </div>
       </div>
@@ -64,7 +92,7 @@
   <!-- End Hero Section -->
 
   <!-- Welcome Section -->
-  <div class="welcome-section">
+  <section class="welcome-section">
     <div class="container">
       <div class="row">
         <div class="col-md-6 d-flex align-items-center">
@@ -82,10 +110,72 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- End of Welcome Section -->
+
+  <!-- Currency Conversion Section for Danish locale -->
+  <section class="currency-conversion">
+    <div class="container">
+      <h2>Currency Conversion</h2>
+      <div class="conversion-form">
+        <div class="form-group">
+          <label for="dkkAmount">Amount in Danish Krone (DKK)</label>
+          <input type="number" class="form-control" id="dkkAmount">
+        </div>
+        <div class="form-group">
+          <label for="eurAmount">Amount in Euro (EUR)</label>
+          <input type="text" class="form-control" id="eurAmount" readonly>
+        </div>
+        <button class="btn btn-primary" id="convertButton">Convert</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Greece Time Difference Section -->
+  <section class="time-difference-section">
+    <div class="container">
+      <h2>Time Difference Between Ireland and Greece</h2>
+      <div class="time-difference-content">
+        <div class="time-details">
+          <h3>Ireland</h3>
+          <p class="ireland-time"></p>
+        </div>
+        <div class="time-details">
+          <h3>Greece</h3>
+          <p class="greece-time"></p>
+        </div>
+        <div class="time-difference">
+          <h3>Time Difference</h3>
+          <p class="time-difference-value"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Denmark Time Difference Section -->
+  <section class="time-difference-section">
+    <div class="container">
+      <h2>Time Difference Between Ireland and Denmark</h2>
+      <div class="time-difference-content">
+        <div class="time-details">
+          <h3>Ireland</h3>
+          <p class="ireland-time"></p>
+        </div>
+        <div class="time-details">
+          <h3>Denmark</h3>
+          <p class="denmark-time"></p>
+        </div>
+        <div class="time-difference">
+          <h3>Time Difference</h3>
+          <p class="time-difference-value"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Explore section -->
-  <div class="explore-section" id="explore-section">
+  <section class="explore-section" id="explore-section">
+
     <div class="explore-background">
       <img src="assets/exploreBackground1.png" alt="Your Image Description">
     </div>
@@ -165,7 +255,8 @@
         </div>
       </div>
     </div>
-  </div>
+
+  </section>
   <!-- End of Explore Section -->
 
   <!-- Footer Section -->
@@ -224,11 +315,6 @@
   </footer>
   <!-- End of Footer Section -->
 
-
-
-
-
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
@@ -236,6 +322,12 @@
   <script src="scripts/exploreSectionCalculation.js"></script>
   <script src="scripts/exploreSectionScroll.js"></script>
   <script src="scripts/updateYear.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scripts/currencyConversion.js"></script>
+
+  <script src="scripts/irelandGreeceTime.js"></script>
+  <script src="scripts/irelandDenmarkTime.js"></script>
 </body>
 
 </html>
